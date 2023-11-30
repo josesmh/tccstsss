@@ -8,6 +8,10 @@ const PORT = 3000;
 app.use(express.static('public'));
 app.use(express.json());
 
+app.get('/api', (req, res) => {
+  res.json({ "mesange": "Hello Word!" })
+}
+)
 app.post('/save-emotion', async (req, res) => {
   try {
     const { value } = req.body;
