@@ -38,7 +38,7 @@
 
     async function saveEmotion(value) {
         try {
-            const response = await fetch('/update-emotion', {
+            const response = await fetch('https://psicoifpb-api.onrender.com/update-emotion', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -47,6 +47,8 @@
             });
     
             const data = await response.json();
+            
+            console.log(data.json);
     
             if (data.success) {
                 console.log('Emotion saved successfully!');

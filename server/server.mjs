@@ -38,7 +38,7 @@ app.post('/update-emotion', async (req, res) => {
 
       await fs.writeFile('data.json', JSON.stringify(jsonData, null, 2));
 
-      res.status(200).json({ success: true });
+      res.status(200).json({ success: true, json: jsonData });
     } else {
       res.status(400).json({ success: false, error: 'Invalid value' });
     }
