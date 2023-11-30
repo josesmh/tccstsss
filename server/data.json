@@ -1,22 +1,22 @@
 [
   {
-    "button":1,
-    "amountClicks": 31
+    "button": 1,
+    "amountClicks": 32
   },
   {
-    "button":2,
+    "button": 2,
     "amountClicks": 14
   },
   {
-    "button":3,
-    "amountClicks": 13
+    "button": 3,
+    "amountClicks": 14
   },
   {
-    "button":4,
+    "button": 4,
     "amountClicks": 5
   },
   {
-    "button":5,
-    "amountClicks": 12
+    "button": 5,
+    "amountClicks": 16
   }
 ]
