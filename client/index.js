@@ -38,7 +38,7 @@
 
     async function saveEmotion(value) {
         try {
-            const response = await fetch('/save-emotion', {
+            const response = await fetch('/update-emotion', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

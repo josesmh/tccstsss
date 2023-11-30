@@ -9,10 +9,21 @@ app.use(express.static('public'));
 app.use(express.json());
 
 app.get('/api', (req, res) => {
-  res.json({ "mesange": "Hello Word!" })
+  res.json({ "message": "Hello World!" })
 }
 )
-app.post('/save-emotion', async (req, res) => {
+app.get('/read-emotion', async (req, res) => {
+  try {
+      const data = await fs.readFile('data.json', 'utf-8');
+      const jsonData = JSON.parse(data);
+      res.status(200).json(jsonData);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ success: false, error: 'Internal Server Error' });
+  }
+});
+
+app.post('/update-emotion', async (req, res) => {
   try {
     const { value } = req.body;
     if (value >= 1 && value <= 5) {
