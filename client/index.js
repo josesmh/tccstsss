@@ -10,19 +10,19 @@
         // Exibe a mensagem correspondente
         switch (value) {
             case 1:
-                message.innerText = "Está tudo bem, dias ruins acontecem. Todo munto tem seus altos e baixos.";
+                message.innerText = "Tá tudo bem, dias ruins acontecem. Todo mundo, sem exceção, tem seus altos e baixos.";
                 break;
             case 2:
-                message.innerText = "Pode melhorar! Encontre algo que te traga alegria.";
+                message.innerText = "Dá pra melhorar, em? Que tal achar alguma coisa pra passar o tempo, como assistir vídeos, filmes ou estudar um assunto que você tem interesse? ";
                 break;
             case 3:
-                message.innerText = "Parece que você não está nem triste nem feliz. Tente fazer algo produtivo ou que lhe dê serotonina ;)";
+                message.innerText = "Parece que você não está nem triste nem feliz (tá mais ou menos). Tente fazer algo que traga felidade pra você ;)";
                 break;
             case 4:
-                message.innerText = "Você está bem! Continue assim e aproveite o dia.";
+                message.innerText = "Você está muito bem (; . Continue assim e aproveite o resto do dia.";
                 break;
             case 5:
-                message.innerText = "Muito feliz! Continue espalhando essa positividade.";
+                message.innerText = "Parece que você está realmente brilhando hoje, né? Não se esqueca de espalhar essa positivade, okay?";
                 break;
             default:
                 message.innerText = "Em uma escala de 1 a 5, como você está?";
