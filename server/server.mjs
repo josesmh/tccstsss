@@ -38,7 +38,7 @@ app.post('/update-emotion', async (req, res) => {
         }
       });
 
-      await fs.writeFile('data.json', JSON.stringify(jsonData, null, 2));
+      await fs.writeFile('data.json', jsonData);
 
       res.status(200).json({ success: true, json: jsonData });
     } else {
