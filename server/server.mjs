@@ -14,7 +14,7 @@ app.get('/api', (req, res) => {
   res.json({ "message": "Hello World!" })
 }
 )
-app.get('/read-emotion', async (req, res) => {
+app.get('/https://psicoifpb-api.onrender.com/read-emotion', async (req, res) => {
   try {
       const data = await fs.readFile('data.json', 'utf-8');
       const jsonData = JSON.parse(data);
@@ -25,7 +25,7 @@ app.get('/read-emotion', async (req, res) => {
   }
 });
 
-app.post('/update-emotion', async (req, res) => {
+app.post('/https://psicoifpb-api.onrender.com/update-emotion', async (req, res) => {
   try {
     const { value } = req.body;
     if (value >= 1 && value <= 5) {
