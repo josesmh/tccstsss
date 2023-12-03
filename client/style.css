@@ -58,6 +58,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: row;
   padding: 20px;
   color: white;
   z-index: 999;
@@ -66,16 +67,23 @@ a {
 
 
 
-
-
-
-
 .logo {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 44px;
+  letter-spacing: 1px;
 }
 
+@media (max-width: 800px) {
+  .toolbar {
+    flex-direction: column;
+  };
+  .logo{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+  }
+  
+}
 .toolbar a {
   margin-left: 20px;
   padding: 10px 5vw;
@@ -88,6 +96,7 @@ a {
   font-size: 16px;
   text-decoration: none;
 }
+
 
 .toolbar a:active {
   background-color: var(--secondary-color);
@@ -112,6 +121,8 @@ a {
     width: 100%;
     padding: 10px 0.7vw;
     text-align: center;
+    margin-left:0px ;
+    margin-top: 10px;
   }
 }
 

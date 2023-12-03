@@ -80,7 +80,8 @@ a {
 .logo {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 44px;
+  letter-spacing: 1px;
 }
 
 .toolbar a {
@@ -101,6 +102,17 @@ a {
     width: 100%;
     padding: 10px 0.7vw;
     text-align: center;
+    margin-left:0px ;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .toolbar {
+    flex-direction: column;
+  };
+  .logo{
+    font-size: 30px;
   }
 }
 
