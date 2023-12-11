@@ -1,6 +1,6 @@
 // server.mjs
 import express from 'express';
-import fs from 'fs';
+import fs from 'fs/promises';
 import cors from 'cors';  
 
 const app = express();
